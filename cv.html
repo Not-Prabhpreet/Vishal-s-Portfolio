@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Vishal Yadav</title>
+    <meta name="description" content="Download the CV of Vishal Yadav, PhD candidate in Mathematics">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/dark-mode.js" defer></script>
+    
+    <style>
+        /* Additional styles specific to this page */
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 20px 0;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--link-hover);
+        }
+        
+        .download-btn i {
+            margin-right: 10px;
+        }
+        
+        .cv-preview {
+            margin: 30px 0;
+            border: 1px solid var(--light-border);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+        
+        .cv-preview:hover {
+            border-color: var(--primary-color);
+        }
+        
+        .preview-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .pdf-iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Vishal Yadav</a>
+            </div>
+            
+            <div style="display: flex; align-items: center;">
+                <button class="menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="talks-conferences.html">Talks</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="darkModeToggle" style="margin-left: 20px; width: 40px; height: 40px; border-radius: 50%; background-color: transparent; color: #800020; border: 2px solid #800020; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                    <i class="fas fa-moon" style="font-size: 1.2rem;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Curriculum Vitae</h1>
+                <p class="subtitle">View and download my complete CV</p>
+            </div>
+            
+            <div class="cv-container">
+                <p>Below you can view and download my complete CV. Please feel free to contact me if you need any additional information.</p>
+                
+                <a href="assets/docs/vishal_yadav_cv.pdf" class="download-btn" download>
+                    <i class="fas fa-download"></i> Download CV (PDF)
+                </a>
+                
+                <div class="cv-preview">
+                    <iframe src="assets/docs/vishal_yadav_cv.pdf" class="pdf-iframe" title="Vishal Yadav's CV"></iframe>
+                </div>
+                
+                <p>If you're having trouble viewing the PDF above, you can <a href="assets/docs/vishal_yadav_cv.pdf" target="_blank">open it in a new tab</a> or download it using the button above.</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>Vishal Yadav</p>
+                <p>Department of Mathematics</p>
+                <p>Memorial University of Newfoundland and Labrador</p>
+                <p class="copyright">© 2025 Vishal Yadav. All rights reserved.</p>
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="mailto:vkyadav@mun.ca" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

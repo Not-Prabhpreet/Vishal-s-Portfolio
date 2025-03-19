@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Achievements | Vishal Yadav</title>
+    <meta name="description" content="Academic background, education, and achievements of Vishal Yadav, PhD candidate in Mathematics">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/dark-mode.js" defer></script>
+    
+    <style>
+        /* Additional styles specific to this page */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--light-bg);
+            border: 4px solid var(--primary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .right::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .timeline-year {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .timeline-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-location {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .achievements-item {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            background-color: var(--secondary-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            transition: background-color 0.3s;
+        }
+        
+        .achievements-item:hover {
+            background-color: var(--light-accent);
+        }
+        
+        .achievement-year {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        /* Make timeline responsive */
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 20px;
+            }
+            
+            .left::after, .right::after {
+                left: 20px;
+            }
+            
+            .right {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Vishal Yadav</a>
+            </div>
+            
+            <div style="display: flex; align-items: center;">
+                <button class="menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="talks-conferences.html">Talks</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="darkModeToggle" style="margin-left: 20px; width: 40px; height: 40px; border-radius: 50%; background-color: transparent; color: #800020; border: 2px solid #800020; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                    <i class="fas fa-moon" style="font-size: 1.2rem;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Education & Achievements</h1>
+                <p class="subtitle">Academic journey and accomplishments</p>
+            </div>
+            
+            <!-- Education Timeline -->
+            <section>
+                <h2 class="section-title">Education</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2022 - Present</div>
+                            <div class="timeline-title">Doctor of Philosophy in Mathematics</div>
+                            <div class="timeline-location">Memorial University of Newfoundland and Labrador, St. John's, Canada</div>
+                            <p>Research Topic: Lie and Hopf Algebras</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2014 - 2019</div>
+                            <div class="timeline-title">Integrated BS-MS in Mathematics</div>
+                            <div class="timeline-location">Indian Institute of Science Education and Research, Thiruvananthapuram, India</div>
+                            <p>CGPA: 7.21/10</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2011 - 2013</div>
+                            <div class="timeline-title">Higher Secondary Education</div>
+                            <div class="timeline-location">Lakshman Bal Vidya Mandir Inter College, Faizabad, India</div>
+                            <p>Mathematics, Percentage: 84.6/100</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Achievements Section -->
+            <section>
+                <h2 class="section-title">Scholarships & Achievements</h2>
+                
+                <div class="card">
+                    <div class="achievements-item">
+                        <span class="achievement-year">2021</span> - Secured an All India rank of 67 in GATE examination held in Feb 2021.
+                    </div>
+                    
+                    <div class="achievements-item">
+                        <span class="achievement-year">2020</span> - Secured an All India rank of 115 in UGC-CSIR(JRF) examination held in Sept 2020.
+                    </div>
+                    
+                    <div class="achievements-item">
+                        <span class="achievement-year">2014-2019</span> - Innovation in Science Pursuit for Inspired Research (INSPIRE) scholarship granted by Department of Science and Technology (DST) for all 5 years of undergraduate and graduate study.
+                    </div>
+                    
+                    <div class="achievements-item">
+                        <span class="achievement-year">2018</span> - Winner of Battle of Bands competition at Inter IISER Cultural Meet (IICM), Kolkata.
+                    </div>
+                    
+                    <div class="achievements-item">
+                        <span class="achievement-year">2018</span> - Secured an All India rank of 92 in CSIR-NET held in June 2018.
+                    </div>
+                    
+                    <div class="achievements-item">
+                        <span class="achievement-year">2014</span> - Qualified IIT-JEE examination held in May 2014 conducted by Joint Admission Board (JAB).
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Coursework Section -->
+            <section>
+                <h2 class="section-title">Key Coursework</h2>
+                
+                <div class="card">
+                    <h3>Graduate Mathematics</h3>
+                    <ul style="columns: 2; margin-left: 20px; margin-bottom: 20px;">
+                        <li>Complex Dynamics</li>
+                        <li>Differential Geometry</li>
+                        <li>Probability Theory and Stochastic Process</li>
+                        <li>Fourier Analysis</li>
+                        <li>Hyperbolic Geometry</li>
+                        <li>Programming and Data Structures</li>
+                        <li>Rings Modules and Algebra</li>
+                        <li>Elliptic Curves and Modular Forms</li>
+                        <li>Functional Analysis</li>
+                        <li>Analysis on Manifolds</li>
+                        <li>Partial Differential Equations</li>
+                    </ul>
+                    
+                    <h3>Undergraduate Mathematics</h3>
+                    <ul style="columns: 2; margin-left: 20px; margin-bottom: 20px;">
+                        <li>Real Analysis</li>
+                        <li>Abstract Algebra</li>
+                        <li>Linear Algebra</li>
+                        <li>Numerical Analysis</li>
+                        <li>Number Theory and Cryptography</li>
+                        <li>Complex Analysis</li>
+                        <li>Measure Theory and Integration</li>
+                        <li>Galois Theory and Commutative Algebra</li>
+                        <li>Theory of Ordinary Differential Equations</li>
+                        <li>General Topology</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>Vishal Yadav</p>
+                <p>Department of Mathematics</p>
+                <p>Memorial University of Newfoundland and Labrador</p>
+                <p class="copyright">© 2025 Vishal Yadav. All rights reserved.</p>
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="mailto:vkyadav@mun.ca" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

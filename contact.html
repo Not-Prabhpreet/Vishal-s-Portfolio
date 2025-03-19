@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Vishal Yadav</title>
+    <meta name="description" content="Contact information and form to reach Vishal Yadav, PhD candidate in Mathematics">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/contact-form.js" defer></script>
+    
+    <!-- Preload darkmode styles to prevent flash -->
+    <style>
+        html.dark-mode, body.dark-mode {
+            background-color: #2A2A2A !important;
+            color: #E0E0E0 !important;
+        }
+        
+        html.dark-mode header, body.dark-mode header {
+            background-color: #222222 !important;
+        }
+    </style>
+    
+    <style>
+        /* Additional styles specific to this page */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .contact-info {
+            background-color: var(--secondary-color);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info-item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+        
+        .contact-form-container {
+            background-color: var(--secondary-color);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-success {
+            display: none;
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .form-error {
+            display: none;
+            background-color: #f2dede;
+            color: #a94442;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--link-hover);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Vishal Yadav</a>
+            </div>
+            
+            <div style="display: flex; align-items: center;">
+                <button class="menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="talks-conferences.html">Talks</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="darkModeToggle" style="margin-left: 20px; width: 40px; height: 40px; border-radius: 50%; background-color: transparent; color: #800020; border: 2px solid #800020; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                    <i class="fas fa-moon" style="font-size: 1.2rem;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Contact Me</h1>
+                <p class="subtitle">Get in touch for collaborations, inquiries, or discussions</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to reach out using any of the methods below:</p>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p><strong>Email:</strong></p>
+                            <p><a href="mailto:vkyadav@mun.ca">vkyadav@mun.ca</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p><strong>Phone:</strong></p>
+                            <p>+1 (226) 881-2605</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Address:</strong></p>
+                            <p>Department of Mathematics</p>
+                            <p>Memorial University of Newfoundland and Labrador</p>
+                            <p>St. John's, NL, A1B 3G8, Canada</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <p><strong>Office Hours:</strong></p>
+                            <p>Monday - Friday: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send a Message</h2>
+                    
+                    <div class="form-success" id="formSuccess">
+                        <p>Thank you for your message! I will get back to you as soon as possible.</p>
+                    </div>
+                    
+                    <div class="form-error" id="formError">
+                        <p>There was an error sending your message. Please try again or contact me directly via email.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>Vishal Yadav</p>
+                <p>Department of Mathematics</p>
+                <p>Memorial University of Newfoundland and Labrador</p>
+                <p class="copyright">© 2025 Vishal Yadav. All rights reserved.</p>
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="mailto:vkyadav@mun.ca" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

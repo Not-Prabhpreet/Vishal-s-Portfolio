@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talks & Conferences | Vishal Yadav</title>
+    <meta name="description" content="Academic talks, presentations and conferences attended by Vishal Yadav, PhD candidate in Mathematics">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/dark-mode.js" defer></script>
+    
+    <style>
+        /* Additional styles specific to this page */
+        .event-card {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+            background-color: var(--secondary-color);
+            transition: border-left 0.3s;
+            border-left: 3px solid transparent;
+        }
+        
+        .event-card:hover {
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .event-year {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .event-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .event-location {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+        
+        .event-date {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 30px;
+            overflow-x: auto;
+            border-bottom: 1px solid var(--light-border);
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+        
+        .tab.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Vishal Yadav</a>
+            </div>
+            
+            <div style="display: flex; align-items: center;">
+                <button class="menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="talks-conferences.html">Talks</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button id="darkModeToggle" style="margin-left: 20px; width: 40px; height: 40px; border-radius: 50%; background-color: transparent; color: #800020; border: 2px solid #800020; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                    <i class="fas fa-moon" style="font-size: 1.2rem;"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Talks & Conferences</h1>
+                <p class="subtitle">Academic presentations and events</p>
+            </div>
+            
+            <!-- Navigation Tabs -->
+            <div class="tabs">
+                <div class="tab active" data-tab="talks">Talks & Presentations</div>
+                <div class="tab" data-tab="conferences">Conferences Attended</div>
+            </div>
+            
+            <!-- Talks Tab Content -->
+            <section id="talks-content" class="tab-content active">
+                <h2 class="section-title">Academic Talks</h2>
+                
+                <div class="event-card">
+                    <div class="event-year">2019</div>
+                    <h3 class="event-title">Introduction to Sieve Theory and its Applications</h3>
+                    <p class="event-location">Indian Institute of Science Education and Research, Thiruvananthapuram</p>
+                    <p>Presented my major project research on sieve theory techniques and their applications in number theory.</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-year">2018</div>
+                    <h3 class="event-title">Von Neumann's Theorem and Extension of Symmetric Operators</h3>
+                    <p class="event-location">Indian Institute of Science Education and Research, Thiruvananthapuram</p>
+                    <p>Discussed my minor project on Von Neumann's theorem and its application to the extension of symmetric operators in Hilbert space.</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-year">2018</div>
+                    <h3 class="event-title">Dirichlet's Theorem on Prime Progression</h3>
+                    <p class="event-location">Anvesha Science Exhibition, IISER-TVM</p>
+                    <p>Gave a public-facing talk on Dirichlet's theorem, explaining its significance in number theory and how it shows the existence of infinitely many primes in arithmetic progressions.</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-year">2017</div>
+                    <h3 class="event-title">Prime Number Theorem</h3>
+                    <p class="event-location">Anvesha Science Exhibition, IISER-TVM</p>
+                    <p>Presented the Prime Number Theorem, discussing its history, proof outline, and significance in understanding the distribution of prime numbers.</p>
+                </div>
+            </section>
+            
+            <!-- Conferences Tab Content -->
+            <section id="conferences-content" class="tab-content">
+                <h2 class="section-title">Conferences Attended</h2>
+                
+                <div class="event-card">
+                    <div class="event-year">2021</div>
+                    <h3 class="event-title">International e-Conference on Number Theory and Differential Equations (ICND)</h3>
+                    <p class="event-location">Central University of Karnataka, Kalaburagi</p>
+                    <p class="event-date">December 20-24, 2021</p>
+                    <p>Participated in this international conference focusing on recent developments in number theory and differential equations.</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-year">2019</div>
+                    <h3 class="event-title">International Conference on Number Theory (ICNT)</h3>
+                    <p class="event-location">Indian Institute of Science Education and Research, Thiruvananthapuram</p>
+                    <p class="event-date">March 11-13, 2019</p>
+                    <p>Attended and volunteered for this conference held as part of IISER-TVM's decennial celebrations.</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-year">2017</div>
+                    <h3 class="event-title">Madhava Mathematics Camp</h3>
+                    <p class="event-location">Indian Statistical Institute, Bangalore</p>
+                    <p class="event-date">June 5-9, 2017</p>
+                    <p>Participated in this intensive mathematics workshop featuring lectures and problem-solving sessions.</p>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-year">2016</div>
+                    <h3 class="event-title">Annual Foundation School</h3>
+                    <p class="event-location">IISER-Thiruvananthapuram</p>
+                    <p class="event-date">December 5-31, 2016</p>
+                    <p>Participated in this month-long intensive program designed to strengthen foundational mathematical concepts.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <p>Vishal Yadav</p>
+                <p>Department of Mathematics</p>
+                <p>Memorial University of Newfoundland and Labrador</p>
+                <p class="copyright">© 2025 Vishal Yadav. All rights reserved.</p>
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="mailto:vkyadav@mun.ca" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script>
+        // Tab switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Show the corresponding tab content
+                    const tabId = tab.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-content`).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* dark-mode.css - Dark mode styles for Vishal Yadav's academic website */
+
+/* This file is kept separate to allow for clean organization */
+/* The actual dark mode color variables are defined in styles.css */
+
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+}
+
+.dark-mode header {
+  background-color: var(--header-bg);
+}
+
+.dark-mode footer {
+  background-color: var(--footer-bg);
+}
+
+.dark-mode .card {
+  background-color: var(--secondary-color);
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: var(--dark-bg);
+  border-color: var(--light-border);
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+  border-color: var(--primary-color);
+}
+
+/* Icon changes for dark mode toggle */
+.dark-mode-toggle .fa-sun {
+  display: none;
+}
+
+.dark-mode-toggle .fa-moon {
+  display: inline-block;
+}
+
+body.dark-mode .dark-mode-toggle .fa-sun {
+  display: inline-block;
+}
+
+body.dark-mode .dark-mode-toggle .fa-moon {
+  display: none;
+}
